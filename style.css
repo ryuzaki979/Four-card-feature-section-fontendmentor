@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background: #fafafa;
+}
+
+header {
+ 
+  text-align: center;
+  padding: 5rem 1rem;
+}
+.light-title{
+    color: #0000003a;
+    font-weight: lighter;
+}
+.strong-title{
+    margin : .25rem 0;
+}
+
+.card {
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #d1cfcf;
+    position: relative;
+    padding: 1rem;
+    border-top: 5px solid;
+}
+.icon{
+    width: 30px;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.cards{
+    width: 50%;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 2rem;
+    
+}
+.card-one{
+    grid-column: 1/2;
+    grid-row: 2/4 ;
+    border-color: #7dc7c9;
+}
+.card-two{
+    grid-column: 2/3;
+    grid-row: 1/3 ;
+    border-color: #b95352;
+}
+.card-three{
+    grid-column: 2/3;
+    grid-row: 3/-1 ;
+    border-color: #e2ba70;
+}
+.card-four{
+    grid-column: 3/-1;
+    grid-row: 2/4 ;
+    border-color:#7da7cc;
+}
+
+
+
+
+
+
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .cards{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        width: 90%;
+        
+    }
+    .card{
+        width: 350px;
+        margin: auto;
+    }
+    .attribution {
+        display: none;
+      }
+  }
